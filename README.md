@@ -4,13 +4,7 @@ By Matthieu Serres & Youness ZAIM
 
 ## Motivation :
 
-Deep Learning has the ability to widely transform our lives by enabling us to create complex objects such as search engines but also with much simpler applications like text generation.
-
-This kind of simpler applications is particularly interesting because despite it’s apparent simplicity, it could impact our daily life. 
-
-We started from this simple observation and decided to create an application that can generate a recipe if you give it an ingredient. This is exactly the type of application that could be used daily.
-
-In this project, we used a Recurrent Neural Network model to generate a recipe. We used the data available at the following link:
+During this project, we found that text generation is one of the most popular application of Deep Learning and a lot of literature is available on the subject and it allowed us to avoid common mistakes. We used a Recurrent Neural Network model to generate a recipe and we used the data available at the following link:
 
 https://storage.googleapis.com/recipe-box/recipes_raw.zip
 
