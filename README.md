@@ -70,7 +70,7 @@ To use our trained model for recipe generation we need to implement a so-called 
 • It gets the prediction distribution of the next character using the start string, and the RNN state.\
 • Then, it uses a categorical distribution to calculate the index of the predicted character. It uses this predicted character as the next input to the model.\
 • The RNN state returned by the model is fed back into the model so that it now has more context, instead of only one character. After predicting the next character, the modified RNN states are again fed back into the model, which is how it learns as it gets more context from the previously predicted characters.\
-The **temperature** parameter here defines how fuzzy or how unexpected the generated recipe is going to be. Low temperatures results in more predictable text. Higher temperatures result in more surprising text. You need to experiment to find the best setting. We will do some experimentation with different temperatures below.
+The **temperature** parameter here defines how fuzzy or how unexpected the generated recipe is going to be. Low temperatures results in more predictable text. Higher temperatures result in more surprising text.
 
 ![0_glH5Eo3QaA9x1_uF](https://user-images.githubusercontent.com/25570567/103687151-19b35480-4f90-11eb-8a83-0805006cc962.png)
 
