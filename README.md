@@ -69,7 +69,9 @@ The **temperature** parameter defines unexpectency in the generated recipe. Gene
 
 ![0_glH5Eo3QaA9x1_uF](https://user-images.githubusercontent.com/25570567/103687151-19b35480-4f90-11eb-8a83-0805006cc962.png)
 
-Next,using our **generate_text()** function to  generate some new recipes, we set the temperature for prediction loop to **0.2** as the lower the temperature, the more coherent, the result.
+Next,using our **generate_text()** function to  generate some new recipes, we set the temperature for prediction loop to **0.2** as the lower the temperature, the more coherent the result is.\
+And last but not least,this model provided good results. However, the training was extremely time consuming and we had to optimize our parameters to get a result. Indeed, the training to have a good result would have taken at least 3 days which was impossible. Therefore, we had to settle for parameters that only gave unusable results which is why we cannot provide any statistics on our results and on our model.
+
 
 ### Building a Text Generator Web App :
 
