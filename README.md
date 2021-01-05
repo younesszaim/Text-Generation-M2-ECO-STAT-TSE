@@ -2,6 +2,34 @@
 Projet for Deep Learning 2 course about Generating cooking recipes
 
 
+## Motivation :
+
+Deep Learning has the ability to widely transform our lives by enabling us to create complex objects such as search engines but also with much simpler applications like text generation.
+
+This kind of simpler applications is particularly interesting because despite it’s apparent simplicity, it could impact our daily life. 
+
+We started from this simple observation and decided to create an application that can generate a recipe if you give it an ingredient. This is exactly the type of application that could be used daily.
+
+In this project, we used a Recurrent Neural Network model to generate a recipe. We used the data available at the following link:
+
+https://storage.googleapis.com/recipe-box/recipes_raw.zip
+
+We encountered some issues and difficulties that will be detailed below. 
+More details are provided with the code in the ipynb file associated.
+
+## Presentation of the data :
+
+Our data regroups 3 files that we merged and cleaned in order to get recipes with :\
+
+•	A title \
+•	A list of ingredients with proportions \
+•	Some cooking instructions \
+
+After cleaning and merging the files, we obtained a data set with 122917 different recipes.
+This plenty enough to build a decent text generating model.
+
+Here is an example of a random recipe in our data set :
+
 ## Building the model
 
 In order to create our model, we used a RNN defined by tf.keras.Sequential. Our model works at the character level which means that given a character in the recipe, it will generate the next character.
