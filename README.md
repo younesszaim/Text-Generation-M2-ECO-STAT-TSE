@@ -83,8 +83,6 @@ As we have seen in this report, we could build a working RNN model that correctl
 
 The main reason for this is that we had to limit drastically the length of the recipes in order to save time and memory, which left us with only 21 recipes in our data set. This is obviously way too low to build a working model, no matter what model we choose.
 
-Thus, this application is not adapted for daily use. 
-
 However, some ideas to improve our model exist and we couldn’t implement them for a lack of time or resources. First, we could use more powerful computers as ours are not really designed to handle such a quantity of data.
 
 A second option to consider would be to build a model that processes recipes word by word and not character by character as it is the case in our project. Indeed, it could be easier to handle for our computers as it would represent less data. 
