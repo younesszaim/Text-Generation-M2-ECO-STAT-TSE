@@ -29,6 +29,7 @@ After cleaning and merging the files, we obtained a data set with 122917 differe
 This plenty enough to build a decent text generating model.
 
 Here is an example of a random recipe in our data set :
+![re](https://user-images.githubusercontent.com/25570567/103688469-20db6200-4f92-11eb-81ba-e412dec12de8.png)
 
 ## Building the model
 
