@@ -59,7 +59,7 @@ The picture above illustrates GRU network, but we can replace GRU with LSTM.
 We chose the ADAM optimizer using  **Tf.keras.optimizers.Adam** optimizer with the sparse categorical cross entropy as a loss function using **Tf.keras.losses.sparse_categorical_crossentropy()**
 
 ### Training the model :
-We trained our model for 50 epochs with 20 steps per epoch. This led us to bad results but is was necessary to have an acceptable training time.(More than 4 days of traning to get good results).
+We trained our model for 50 epochs with 20 steps per epoch. This led us to bad results but is was necessary to have an acceptable training time. **This didn't enable us to present some useful statistics in our training** (A proper training needs more than 4 days of traning to get good results).
 In addition we created a model checkpoints callback.  This let's configure a **tf.keras.callbacks.ModelCheckpoint** checkpoint that will allow us to periodically save trained weights to the file so that we could restore the model from weights afterwards.
 
 ### Generating recipes :
@@ -74,7 +74,7 @@ The **temperature** parameter here defines how fuzzy or how unexpected the gener
 
 ![0_glH5Eo3QaA9x1_uF](https://user-images.githubusercontent.com/25570567/103687151-19b35480-4f90-11eb-8a83-0805006cc962.png)
 
-Next,using our **generate_text()** function to  generate some new recipes, we set the temperature for prediction loop to **0.2**.
+Next,using our **generate_text()** function to  generate some new recipes, we set the temperature for prediction loop to **0.2** as the lower the temperature, the more coherent, the result.
 
 ### Building a Text Generator Web App :
 
